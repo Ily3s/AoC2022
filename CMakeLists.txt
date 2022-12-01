@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.23)
+project(AoC2022 C)
+
+set(CMAKE_C_STANDARD 11)
+
+add_executable(AoC2022 src/main.c src/Common.h src/days/d1/day1.c)
