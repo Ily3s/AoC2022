@@ -18,5 +18,6 @@ enum Part
 };
 
 void day1(enum Part p);
+void day2(enum Part p);
 
 #endif //AOC2022_COMMON_H
