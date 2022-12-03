@@ -22,6 +22,8 @@ int main()
                 day1(part_nb);
             else if (day_nb == 2)
                 day2(part_nb);
+            else if (day_nb == 3)
+                day3(part_nb);
             else
                 printf("This day has not been done yet or doesn't exist.\n");
         }
