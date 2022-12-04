@@ -6,10 +6,10 @@ int main()
 
     while (!should_end)
     {
-        printf("Type <day> <part> or \"quit\"/\"exit\"\n>");
+        printf("Type <day> <part> or \"quit\"/\"exit\"/\"stop\"\n>");
         char line[10];
         fgets(line, 10, stdin);
-        if (!strcmp(line, "quit\n") || !strcmp(line, "exit\n") )
+        if (!strcmp(line, "quit\n") || !strcmp(line, "exit\n") || !strcmp(line, "stop\n"))
         {
             should_end = true;
         }
@@ -24,6 +24,8 @@ int main()
                 day2(part_nb);
             else if (day_nb == 3)
                 day3(part_nb);
+            else if (day_nb == 4)
+                day4(part_nb);
             else
                 printf("This day has not been done yet or doesn't exist.\n");
         }

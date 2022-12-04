@@ -10,7 +10,8 @@ void day3(enum Part part)
 
     uint64_t output_sum = 0;
 
-    if (part == PART1) {
+    if (part == PART1)
+    {
 
         char line[100];
 
