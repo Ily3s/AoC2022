@@ -68,7 +68,5 @@ void day9(enum Part part)
 
     printf("%d\n", pos_index);
 
-    // 2487 too high
-
     fclose(input);
 }
