@@ -6,7 +6,7 @@
 
 void day3(enum Part part)
 {
-    FILE* file = fopen("../src/days/d3/input.txt", "r");
+    FILE* file = fopen("../src/days/d03/input.txt", "r");
 
     uint64_t output_sum = 0;
 

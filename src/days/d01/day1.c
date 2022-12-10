@@ -6,7 +6,7 @@
 
 void day1(enum Part part)
 {
-    FILE* file = fopen("../src/days/d1/input.txt", "rb");
+    FILE* file = fopen("../src/days/d01/input.txt", "rb");
 
     int max1 = 0, max2 = 0, max3 = 0;
     int current = 0;

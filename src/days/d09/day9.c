@@ -11,7 +11,7 @@ struct Position
 
 void day9(enum Part part)
 {
-    FILE* input = fopen("../src/days/d9/input.txt", "r");
+    FILE* input = fopen("../src/days/d09/input.txt", "r");
     char line[10];
 
     int rope_size = 0;

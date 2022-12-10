@@ -15,8 +15,11 @@ int main()
         }
         else
         {
-            int day_nb = line[0] - 48;
-            int part_nb = line[2] - 48;
+            int day_nb = 0, part_nb = 0;
+
+            int i = 0;
+            for (; i < strlen(line) && line[i] != ' '; day_nb *= 10, day_nb += (line[i] - 48), i++);
+            for (i++; i < strlen(line) && line[i] != ' ' && line[i] != '\n'; part_nb *= 10, part_nb += line[i] - 48, i++);
 
             if (day_nb == 1)
                 day1(part_nb);
@@ -36,6 +39,8 @@ int main()
                 day8(part_nb);
             else if (day_nb == 9)
                 day9(part_nb);
+            else if (day_nb == 10)
+                day10(part_nb);
             else
                 printf("This day has not been done yet or doesn't exist.\n");
         }

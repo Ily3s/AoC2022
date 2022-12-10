@@ -6,7 +6,7 @@
 
 void day2(enum Part part)
 {
-    FILE* file = fopen("../src/days/d2/input.txt", "r");
+    FILE* file = fopen("../src/days/d02/input.txt", "r");
 
     char line[5];
     uint64_t total_score = 0;

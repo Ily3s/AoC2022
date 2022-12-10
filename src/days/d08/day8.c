@@ -6,7 +6,7 @@
 
 void day8(enum Part part)
 {
-    FILE* input = fopen("../src/days/d8/input.txt", "r");
+    FILE* input = fopen("../src/days/d08/input.txt", "r");
     char line[101];
 
     char input_map[99][99];

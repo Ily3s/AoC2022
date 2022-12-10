@@ -6,7 +6,7 @@
 
 void day7(enum Part part)
 {
-    FILE* input = fopen("../src/days/d7/input.txt", "r");
+    FILE* input = fopen("../src/days/d07/input.txt", "r");
 
     char line[50];
     uint64_t* done_dir_sizes = malloc(64);

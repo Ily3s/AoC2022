@@ -6,7 +6,7 @@
 
 void day4(enum Part part)
 {
-    FILE* input = fopen("../src/days/d4/input.txt", "r");
+    FILE* input = fopen("../src/days/d04/input.txt", "r");
     int output = 0;
     char line[20];
     while (fgets(line, 20, input))

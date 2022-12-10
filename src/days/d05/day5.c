@@ -56,7 +56,7 @@ void free_stack(struct Stack* stack)
 
 void day5(enum Part part)
 {
-    FILE* input = fopen("../src/days/d5/input.txt", "r");
+    FILE* input = fopen("../src/days/d05/input.txt", "r");
     char output[21];
 
     struct Stack stacks[20];

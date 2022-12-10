@@ -6,7 +6,7 @@
 
 void day6(enum Part part)
 {
-    FILE* input = fopen("../src/days/d6/input.txt", "r");
+    FILE* input = fopen("../src/days/d06/input.txt", "r");
     char buffer[14];
     char current[2];
     int i = 1;
