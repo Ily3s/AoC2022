@@ -68,7 +68,13 @@ void day12(enum Part part)
         int current_size = size;
         for (int i = index; i < current_size; i++)
         {
-            struct pos valid_moves[4] = {{checked_pos[i].x - 1, checked_pos[i].y}, {checked_pos[i].x + 1, checked_pos[i].y}, {checked_pos[i].x, checked_pos[i].y - 1}, {checked_pos[i].x, checked_pos[i].y + 1}};
+            struct pos valid_moves[4] =
+                    {
+                    {checked_pos[i].x - 1, checked_pos[i].y},
+                    {checked_pos[i].x + 1, checked_pos[i].y},
+                    {checked_pos[i].x, checked_pos[i].y - 1},
+                    {checked_pos[i].x, checked_pos[i].y + 1}
+                    };
 
             for (int j = 0; j < 4; j++)
             {
