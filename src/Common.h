@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
+#include <time.h>
 
 enum Part
 {
@@ -29,5 +30,6 @@ void day9(enum Part p);
 void day10(enum Part p);
 void day11(enum Part p);
 void day12(enum Part p);
+void day13(enum Part p);
 
 #endif //AOC2022_COMMON_H

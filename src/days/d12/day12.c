@@ -11,6 +11,8 @@ struct pos
 
 void day12(enum Part part)
 {
+    clock_t start_time = clock();
+
     FILE* input = fopen("../src/days/d12/input.txt", "r");
 
     char line[200];
@@ -103,7 +105,11 @@ void day12(enum Part part)
         index = current_size;
     }
 
+    double duration = (double)(clock() - start_time) / (double)CLOCKS_PER_SEC;
+
     printf("%llu\n", path_length);
 
     fclose(input);
+
+    printf("Done in %f ms\n", duration * 1000);
 }

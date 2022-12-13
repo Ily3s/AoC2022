@@ -4,13 +4,13 @@
 
 #include "../../Common.h"
 
-int clock = 0, X = 1, output = 0, next_cap = 19;
+int d10_clock = 0, X = 1, output = 0, next_cap = 19;
 
 void draw_pixel()
 {
-    if ((clock % 40) == 0)
+    if ((d10_clock % 40) == 0)
         printf("\n");
-    printf("%c", 32 + 3*((int)(abs(X - (clock % 40))) <= 1));
+    printf("%c", 32 + 3*((int)(abs(X - (d10_clock % 40))) <= 1));
 }
 
 void day10(enum Part part)
@@ -20,7 +20,7 @@ void day10(enum Part part)
 
     while(fgets(line, 20, input))
     {
-        if (clock >= next_cap)
+        if (d10_clock >= next_cap)
         {
             output += (next_cap + 1) * X;
             next_cap += 40;
@@ -29,7 +29,7 @@ void day10(enum Part part)
         {
             if (part == PART2)
                 draw_pixel();
-            clock++;
+            d10_clock++;
         }
         else if (line[0] == 'a')
         {
@@ -37,9 +37,9 @@ void day10(enum Part part)
             {
                 if (part == PART2)
                     draw_pixel();
-                clock++;
+                d10_clock++;
             }
-            if (clock > next_cap)
+            if (d10_clock > next_cap)
             {
                 output += (next_cap + 1) * X;
                 next_cap += 40;
